@@ -33,10 +33,18 @@ a:hover {
 h1 {
   font-size: 72px;
   font-weight: 700;
+  color: white;
 }
 
 h2 {
   font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+  color: white;
+}
+
+h3 {
+  font-size: 44px;
   font-weight: 700;
   line-height: 1;
 }
@@ -45,6 +53,7 @@ h4 {
   font-size: 36px;
   font-weight: 700;
   line-height: 1;
+  color: white;
 }
 
 /* Nav Bar styling */
@@ -96,6 +105,12 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
 }
 
 .hero-2 {
@@ -110,18 +125,25 @@ li {
 .hero-2-top,
 .hero-2-bottom {
   border: 1px solid black;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
 }
 
 @media screen and (max-width: 700px) {
   .flex-hero {
     flex-direction: column;
+    min-height: 0;
   }
 
   .hero-1 {
     flex: 1;
   }
   .hero-2 {
-    flex: 2;
+    flex: 1;
   }
 
   .hero-1-top {
@@ -142,5 +164,35 @@ li {
   h2,
   h4 {
     font-size: 24px;
+  }
+}
+
+/* Start of Article grid styling */
+
+.article-grid {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  width: 100%;
+  min-height: 75vh;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.article {
+  border: 1px solid black;
+  flex: 1 1 24%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 121, 121, 0.8449579660965949) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+@media screen and (max-width: 700px) {
+  .article-grid {
+    flex-direction: column;
   }
 }
