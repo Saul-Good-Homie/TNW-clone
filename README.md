@@ -1,4 +1,4 @@
-In this project, I am creating a greyscale visual hierarchy of the Smashing.com home page and importing google fonts. This project is a practice in design elements and typography.
+In this project, I am creating a semi-clone of The Next Web [homepage](https://thenextweb.com/). The page strucutre is cloned but the content is missing. The purpose of this project is to practice using media queries to make repsonsive website designs. This website has media queries at 900px and 700px.
 
 CSS Project from [The Odin Project](https://www.theodinproject.com/lessons/building-with-responsive-design)
 

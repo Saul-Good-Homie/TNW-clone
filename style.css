@@ -77,6 +77,10 @@ li {
 
 .nav-wrapper {
   height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-right: 20px;
 }
 
 .top-nav {
@@ -94,6 +98,7 @@ li {
 
 .flex-hero {
   display: flex;
+  margin-top: 80px;
   width: 100%;
   min-height: 75vh;
   gap: 10px;
@@ -174,6 +179,7 @@ li {
   max-width: 1100px;
   min-height: 75vh;
   grid-gap: 10px;
+  margin: auto;
 }
 
 .article {
@@ -201,7 +207,7 @@ li {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
-  min-height: 40vh;
+  min-height: 60vh;
   grid-gap: 10px;
 }
 
@@ -219,9 +225,8 @@ li {
   .funding-columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 1px solid black;
     width: 100%;
-    min-height: 40vh;
+    min-height: 60vh;
     grid-gap: 10px;
   }
 
@@ -263,6 +268,7 @@ footer {
 .links > ul {
   justify-content: center;
 }
+
 .social > ul li {
   background: grey;
   border-radius: 50%;
