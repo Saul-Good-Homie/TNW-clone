@@ -170,18 +170,16 @@ li {
 /* Start of Article grid styling */
 
 .article-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
   border: 1px solid black;
   width: 100%;
   min-height: 75vh;
-  gap: 10px;
-  justify-content: space-between;
+  grid-gap: 10px;
 }
 
 .article {
   border: 1px solid black;
-  flex: 1 1 24%;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
@@ -193,6 +191,8 @@ li {
 
 @media screen and (max-width: 700px) {
   .article-grid {
+    display: flex;
+    flex: 1;
     flex-direction: column;
   }
 }
